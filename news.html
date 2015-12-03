@@ -7,6 +7,7 @@
     <link href="lib/awesome/css/font-awesome.css" type="text/css" rel="stylesheet"/>
     <link href="lib/hplus/css/style.css" type="text/css" rel="stylesheet"/>
     <link href="lib/hplus/css/animate.min.css" type="text/css" rel="stylesheet"/>
+    <link href="lib/dtgrid/css/jquery.dtGrid.css" type="text/css" rel="stylesheet"/>
 </head>
 <body class="gray-bg">
 <div class="row">
@@ -19,8 +20,8 @@
                     </span>
 
                     <h1 class="m-b-xs">新闻管理</h1>
-
-                    <div class="border-bottom">
+                    <!--搜索-->
+                    <div class="wrapper" style="border: 1px solid lightgray;">
                         <form class="form-horizontal" role="form" action="" method="post" style="border:gray 1px;">
                             <fieldset>
                                 <legend class="pull-left">搜索新闻</legend>
@@ -46,13 +47,18 @@
                                 </div>
                                 <div class="form-group">
                                 <span class="pull-right">
-                                    <button class="btn btn-success" type="button">搜索</button>
-                                    <button class="btn btn-default" type="button">重置</button>
+                                    <div class="col-sm-4">
+                                        <button class="btn btn-success" type="button">搜索</button>
+                                    </div>
+                                    <div class="col-sm-4">
+                                        <button class="btn btn-default" type="button">重置</button>
+                                    </div>
                                 </span>
                                 </div>
                             </fieldset>
                         </form>
                     </div>
+                    <!--搜索END-->
 
                 </div>
             </div>
@@ -66,6 +72,8 @@
 <script src="lib/hplus/js/plugins/metisMenu/jquery.metisMenu.js"></script>
 <script src="lib/hplus/js/plugins/slimscroll/jquery.slimscroll.min.js"></script>
 <script src="lib/hplus/js/plugins/layer/layer.min.js"></script>
+<script src="lib/dtgrid/js/jquery.dtGrid.js"></script>
+<script src="lib/dtgrid/i18n/zh-cn.js"></script>
 
 <!-- 自定义js -->
 <script src="lib/hplus/js/hplus.min.js?v=3.0.0"></script>
